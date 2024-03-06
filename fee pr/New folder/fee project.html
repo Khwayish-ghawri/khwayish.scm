@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+ 
+    <title>Your Travel Website</title>
+</head>
+<body>
+
+    |
+    <header>
+        <h1>Your Travel Website</h1>
+        <nav>
+            <a href="travel.html">Home</a>
+            <a href="kk.html">Destinations</a>
+            <a href="KKK.html">Travel Guides</a>
+            <a href="k.html">Blog</a>
+            <a href="kooo.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Discover Your Next Adventure</h2>
+        <p>Explore breathtaking destinations, plan unforgettable journeys, and make memories that last a lifetime.</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Enter destination">
+            <input type="date">
+            <button>Find Your Perfect Getaway</button>
+        </div>
+    </section>
+
+    <section class="featured-destinations">
+        <h2>Featured Destinations</h2>
+        <div class="destination-card">
+            <img src="https://source.unsplash.com/random/800x600" alt="Destination 1">
+
+            <h3>City of Lights</h3>
+            <p>Discover the magic of Paris with its iconic landmarks and rich history.</p>
+        </div>
+        <div class="destination-card">
+            <img src="https://source.unsplash.com/random/800x600" alt="Destination 2">
+            <h3>Tropical Paradise</h3>
+            <p>Escape to the Maldives and experience the beauty of pristine beaches and crystal-clear waters.</p>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <h2>Why Choose Us</h2>
+        <div class="choose-us-item">
+            <i class="fas fa-compass"></i>
+            <h3>Expert Guides</h3>
+            <p>Our knowledgeable guides ensure a memorable and immersive travel experience.</p>
+        </div>
+        <div class="choose-us-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Customized Itineraries</h3>
+            <p>We create personalized itineraries to suit your preferences and interests.</p>
+        </div>
+        <div class="choose-us-item">
+            <i class="fas fa-percent"></i>
+            <h3>Exclusive Deals</h3>
+            <p>Access special deals and discounts on accommodations, flights, and activities.</p>
+        </div>
+    </section>
+
+   
+    <section class="travel-guides">
+        <h2>Travel Guides</h2>
+        <div class="guide-card">
+            <img src="https://source.unsplash.com/random/800x600" alt="Guide 1">
+            <h3>Paris Travel Guide</h3>
+            <p>Explore the best of Paris with our comprehensive travel guide.</p>
+        </div>
+        <div class="guide-card">
+            <img src="https://source.unsplash.com/random/800x600" alt="Guide 2">
+            <h3>Maldives Adventure</h3>
+            <p>Plan your dream vacation to the Maldives with our detailed travel tips.</p>
+        </div>
+    </section>
+
+  
+    <section class="latest-blog-posts">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-post">
+            <img src="https://source.unsplash.com/random/800x600" alt="Blog 1">
+            <h3>Top 10 Must-Visit Places in Paris</h3>
+            <p>Discover the iconic landmarks and hidden gems in the City of Lights.</p>
+        </div>
+        <div class="blog-post">
+            <img src="https://source.unsplash.com/random/800x600" alt="Blog 2">
+            <h3>Snorkeling in the Maldives</h3>
+            <p>Explore the vibrant underwater world of the Maldives through snorkeling adventures.</p>
+        </div>
+    </section>
+
+   
+    <section class="testimonials">
+        <h2>What Our Travelers Say</h2>
+        <div class="testimonial">
+            <img src="https://source.unsplash.com/random/100x100" alt="User 1">
+            <p>"An amazing journey with breathtaking views. The guides were knowledgeable and friendly."</p>
+            <cite>- Sarah D.</cite>
+        </div>
+        <div class="testimonial">
+            <img src="https://source.unsplash.com/random/100x100" alt="User 2">
+            <p>"I had a fantastic experience! The travel arrangements were seamless, and the destinations were stunning."</p>
+            <cite>- John M.</cite>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Get Inspired! Subscribe Now</h2>
+        <input type="email" id="emailInput" placeholder="Enter your email">
+        <button onclick="subscribe()">Subscribe</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Travel Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function subscribe() {
+            // Get the email input value
+            const email = document.getElementById('emailInput').value;
+
+            // Check if the email is valid (basic check for demonstration purposes)
+            if (email && email.includes('@')) {
+                alert(Thank you for subscribing with email: ${email});
+                // Here, you can send the email data to your server for processing or store it in your database.
+            } else {
+                alert('Please enter a valid email address');
+            }
+        }
+    </script>
+</body>
+</html>
